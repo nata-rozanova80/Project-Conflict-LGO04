@@ -7,6 +7,7 @@ def guess_the_number():
 
     print("ЧЕГОТОТАМЧЕГОТОТАМДобро пожаловать в игру 'Угадай число'!")
     print("ТРАЛЯЛЯЛЯЛЯЯ загадал число от 1 до 100. Попробуйте угадать его!")
+    a = 0
 
     while not guessed:
         player_guess = input("Введите ваше предположение: ")
@@ -17,11 +18,11 @@ def guess_the_number():
             continue
 
         player_guess = int(player_guess)
-        attempts += 1
+        a +=1
 
         print ("конфликт")
         if player_guess < number_to_guess:
-            print("Слишком низко! Попробуйте еще раз.")
+            print(a)
         elif player_guess > number_to_guess:
             print("Слишком высоко! Попробуйте еще раз.")
         else:
